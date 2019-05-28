@@ -6,8 +6,7 @@
 	</div>
 	<div class="gallery">
 	@foreach($images as $key => $image)
-		<img src="/img/{!! $image !!}" class="column" style="max-width:100%; height: auto;">
+		<img src="/img/{!! $image !!}" class="column img-responsive">
 	@endforeach
 	<div>
-	
 @endsection

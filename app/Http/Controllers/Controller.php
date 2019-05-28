@@ -55,7 +55,7 @@ class Controller extends BaseController
 
 		$currentPage = Paginator::resolveCurrentPage();
         $col = collect($new_images);
-        $perPage = 16;
+        $perPage = 12;
         $currentPageItems = $col->slice(($currentPage - 1) * $perPage, $perPage)->all();
         $images = new Paginator($currentPageItems, count($col), $perPage);
         $images->setPath($request->url());
