@@ -15,7 +15,7 @@
   var uploadedDocumentMap = {}
   Dropzone.options.documentDropzone = {
     url: 'https://wedfest.duckdns.org/uploadPost',
-    maxFilesize: 2, // MB
+    maxFilesize: 5, // MB
     addRemoveLinks: true,
     headers: {
       'X-CSRF-TOKEN': "{{ csrf_token() }}"

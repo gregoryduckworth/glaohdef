@@ -32,6 +32,8 @@ class Controller extends BaseController
 
 	    $file->move($path, $name);
 
+	    \Image::make($path . '/' . $name)->orientate()->save($path . '/' . $name);
+
 	    return response()->json([
 	        'name'          => $name,
 	        'original_name' => $file->getClientOriginalName(),
