@@ -128,6 +128,7 @@
         color: #fff !important;
         background-color: transparent;
         border-color: transparent;
+	text-decoration: underline;
     }
 
     .page-item.disabled .page-link {
